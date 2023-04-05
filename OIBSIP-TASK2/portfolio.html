@@ -1,1 +1,435 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="hackverse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Portfolio</title>
+    <style>
+        * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100%;
+      }
+        .navbar{
+            border: 1px;
+            border-radius: 2px;
+            height: 50px;
+            width: 100%;
+            background: coral;
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 0;
+            transition: top 0.3s;
+        }
+        .on{
+            margin-left: 5px;
+            padding: 5px;
+        }
+        #H{
+            color: darkred;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #one{
+            border: 2px;
+            background: transparent;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: larger;
+            margin: 5px;
+        }
+        #one a{
+            text-decoration: none;
+            color: darkred;
+        }
+        #two{
+            border: 2px;
+            background: transparent;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: larger;
+            margin: 5px;
+        }
+        #two a{
+            color: darkred;
+            text-decoration: none;
+        }
+        #three{
+            border: 2px;
+            background: transparent;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: larger;
+            margin: 5px;
+        }
+        #three a{
+            color: darkred;
+            text-decoration: none;
+        }
+        #four{
+            border: 2px;
+            background: transparent;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: larger;
+            margin: 5px;
+        }
+        #four a{
+            text-decoration: none;
+            color: darkred;
+        }
+        #one:hover{
+            background: white;
+        }
+        #two:hover{
+            background: white;
+        }
+        #three:hover{
+            background: white;
+        }
+        #four:hover{
+            background: white;
+        }
+        #d1{
+            margin-top: 50px;
+        }
+        #img1{
+            margin: auto;
+            width: 250px;
+            height: 250px;
+            justify-content: center;
+            border-radius: 50px;
+        }
+        #d1 h1{
+            margin-top: 15px;
+            text-align: center;
+        }
+        #d1 h4{
+            margin-top: 10px;
+            text-align: center;
+            font-weight: 900;           
+        }
+        #d2{
+            margin-top: 50px;
+            text-align: center;
+            background: coral;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        #d2 p{
+            line-height: 40px;
+            text-align: justify;
+            padding: 15px 150px;
+        }
+        #d21{
+            text-align: center;
+        }
+        #d21 button{
+            margin-bottom: 10px;
+            border: 1px;
+            border-radius: 5px;
+            padding: 15px;
+            font-weight: 700;
+            font-size: x-large;
+            background: transparent;
+            align-self: center;
+        }
+        #d21 button a{
+            text-decoration: none;
+        }
+        #d21 button:hover{
+            background: white;
+        }
+        #d21 button a:hover{
+            color: gold;
+        }
+       #d3{
+            margin-top: 50px;
+            text-align: center;
+            margin-bottom: 50px;
+            background: coral;
+            border: 1px solid;
+            border-radius: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #d31 p{
+            margin-top: 20px;
+            display: flexbox;
+            padding: 10px 0;
+        }
+        #d31 p:hover{
+            background: none;
+        }
+        
+        .p1{
+            margin-top: 30px;
+            font-size: larger;
+            word-spacing: 30px;
+        }
+        .contactinfo{
+            display: flex;
+            flex-direction: column;
+        }
+        .container{
+            margin-top: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .contactinfo{
+            margin-top: 30px;
+            margin-right: 700px;
+            justify-content: space-between;
+        }
+       .p1 a{
+            padding: 20px 0;
+        }
+        .cform{
+            justify-content: right;
+            display: flexbox;
+            padding-top: 10px;
+        }
+        .f{
+            margin-top: 20px;
+        }
+        #contact{
+            justify-content: center;
+            margin-top: 50px;
+            border: 1px outset black;
+            border-radius: 50px;
+            box-sizing: content-box;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        form{
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            text-align: center;
+            display: block;
+        }
+        div{
+            text-align: center;
+            display: block;
+            justify-content: center;
+        }
+        input,textarea{
+            width: 75%;
+            padding: 10px;
+            display: block;
+            margin: auto;
+        }
+        #b1{
+            margin-top: 20px;
+            padding: 10px;
+            width: 75%;
+            background: black;
+            color: white;
+            border: 1px solid black;
+            border-radius: 2px;
+        }
+        form h1{
+            color: black;
+            margin-bottom: 20px;
+        }
+        .contactform {
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-around; */
+            margin-top: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .cme{
+            margin-top: 15px;
+        }
+        .cme p {
+            padding-bottom: 30px;
+        }
+        #cont h1{
+            margin-top: 50px;
+            text-align: center;
+        }
+        body{
+           background: none;
+        }
+        main{
+            padding: 40px 0;
+        }
+        .foot{
+            height: 60px;
+            background: black;
+            margin-bottom: 10px;
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        .foot p{
+            color: white;
+            padding: 20px 0;
+        }
+        .row{
+            display: flex;
+            justify-content: space-between;
+        }
+        #column{
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 200px;
+            height: 180px;
+            margin: 50px 50px;
+            text-align: justify;
+            padding: 10px;
+        }
+        #ppb1 a{
+            text-decoration: none;
+        }
+        #ppb1{
+            color: white;
+            background: transparent;
+            padding: 10px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            font-weight: bolder;
+        }
+        #ppb1:hover{
+            background: white;
+            color: black;
+        }
+        #column:hover{
+            background: deeppink;
+            box-shadow: 15px 15px 10px black;
+        }
+        #projects{
+            margin-left: 20px;
+            margin-right: 20px;
+            background: coral;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+        #cont{
+            background: coral;
+        }
+        #Co{
+            margin-top: 50px;
+            background: coral;
+            margin-left: 20px;
+            margin-right: 20px;
+            border: 1px solid;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div class="navbar">
+        <div class="on">
+            <h1 id="H">Portfolio</h1>
+        </div>
+        <div id="one">
+            <a href="#d2">About</a>
+        </div>
+        <div id="two">
+            <a href="#d3">Skills</a>
+        </div>
+        <div id="three">
+            <a href="#projects">Projects</a>
+        </div>
+        <div id="four">
+            <a href="#Co">Contact me</a>
+        </div>
+    </div>
+    <div id="d1">
+        <img id="img1" src="pic1.jpeg" alt="kishore" width="300px" height="300px">
+        <h1>A.Kishore kumar</h1>
+        <h4>Third year B.tech student</h4>
+    </div>
+    <div id="d2">
+        <h1 id="H1">About Me</h1>
+        <p>I am A.Kishore Kumar pursuing B.tech third year in the stream of Computer Science and Engineering at vemu institute of technology. I am a good communicator and i am always eager to learn new skills. Im working on frontend development and it will lead to full stack development.</p>
+        <div id="d21">
+            <button><a href="https://drive.google.com/file/d/1MQjJr0H5u90uO9d3zWrYj1mZbdbM8twp/view?usp=share_link">View-Resume</a></button>
+        </div>
+    </div>
+    <div id="d3">
+        <h1 id="h2">Skills</h1>
+        <div id="d31">
+            <p style="font-size: x-large;">C</p>
+            <p style="font-size: x-large;">Python</p>
+            <p style="font-size: x-large;">HTML5</p>
+            <p style="font-size: x-large;">CSS3</p>
+        </div>
+    </div>
+    <div id="projects">
+        <h1 style="text-align: center;">Projects</h1>
+        <div class="row">
+            <div id="column">
+                <p>I did an E-commerce landing page. The page contains the information about different beauty products. This includes cost and specialization of the product.</p>
+                <div id="pb1">
+                    <button id="ppb1"><a href="https://github.com/111kishore/OIBSIP.git">View</a></button>
+                </div>
+            </div>
+            <div id="column">
+                <p>I have created a Portfolio page by using HTML and CSS. The page which contains my details like my resume , Skills, Projects and my contact information. </p>
+                <div id="pb1">
+                    <button id="ppb1"><a href="">View</a></button>
+                </div>
+            </div>
+            <div id="column">
+                <p>I have created Temperature converter website.Which can convert temperature in farenheit to celsius and celsius to farenheit as well.We can easily convert by using this page.</p>
+                <div id="pb1">
+                    <button id="ppb1"><a href="">View</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Co">
+        <h1>Contact me</h1>
+        <div class="contactform">
+            <div class="cme">
+                <i class="fa fa-user"></i>
+                <h3>Name</h3>
+                <p style="font-weight: lighter;">Kishore Kumar</p>
+                <i class="fa-solid fa-envelope"></i>
+                <h3>Email</h3>
+                <p style="font-weight: lighter;">kishoreanandam3224@gmail.com</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>Address</h3>
+                <p style="font-weight: lighter;">Yerpedu,Tirupathi</p>
+                <i class="fa-solid fa-mobile"></i>
+                <h3>Phone</h3>
+                <p style="font-weight: lighter;">+91-9573049402</p>
+            </div>
+            <div class="cform">
+                <form action="#">
+                    <!-- <h1>Contact Me</h1> -->
+                    <input type="text" placeholder="Enter Name" name="" id="" style="outline: none;">
+                    <br>
+                    <input type="email" placeholder="Enter mail" name="" id="" style="outline: none">
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message..." style="outline: none;"></textarea>
+                    <button id="b1">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+    <footer>
+        <div class="foot">
+            <p>&copy; Kishore kumar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
