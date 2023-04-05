@@ -1,1 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="hackverse.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>My task1</title>
+    <style>
+        * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .main {
+        width: 100%;
+      }
+        .navbar{
+            width: 100%;
+            height: 50px;
+            background: blanchedalmond;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+        }
+        #two{
+            border: 2px;
+            background: white;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: larger;
+        }
+        #three{
+            border: 2px;
+            background: white;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: larger;
+        }
+        #four{
+            border: 2px;
+            background: white;
+            border-radius: 20px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: larger;
+        }
+        #two:hover{
+            background: hotpink;
+        }
+        #three:hover{
+            background: hotpink;
+        }
+        #four:hover{
+            background: hotpink;
+        }
+        #five i{
+            padding-right: 40px;
+        }
+        .text-block{
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            background-color: white;
+            color: black;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: x-large;
+            font-style: italic;
+            text-align: center;
+        }
+        #s1{
+            background-image: url("https://png.pngtree.com/background/20210711/original/pngtree-simple-skin-care-cosmetics-promotion-picture-image_1097040.jpg");
+            height: 100vh;
+            width: 100%;
+            background-size: cover;
+            background-position: top 25% right 0;
+            padding: 0 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
 
+        }
+        #s1 h3{
+           padding-left: 500px;
+           font-size: x-large;
+        }
+        #s1 h2{
+            font-size: xx-large;
+            padding-left: 500px;
+        }
+        #s1 h1{
+            font-size: xx-large;
+            padding-left: 500px;
+        }
+        #s1 p{
+            font-size: larger;
+            padding-left: 500px;
+        }
+        #s1 button{
+           align-items: center;
+           margin-left: 500px;
+           background: transparent;
+           border-radius: 10px;
+           font-weight: 600;
+           padding: 20px 30px;
+        }
+        #s1 button:hover{
+            background: gold;
+        }
+        #f{
+            font-size: xx-large;
+            text-align: center;
+            background: darksalmon;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding-top: 20px;
+        }
+        /*.column{
+            width: 23%;
+            min-width: 250px;
+            padding: 10px 12px;
+            border: 1px solid #90afae;
+            border-radius: 25px;
+            cursor: pointer;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+            margin: 15px 0;
+            transition: 0.2s ease;
+        }*/
+        .column{
+                width: fit-content;
+                border: 1px solid black;
+                border-radius: 25px;
+                margin: 50px 50px;
+            }
+        .column img{
+            padding-top: 20px;
+        }
+        .content {
+            margin-left: 65px;
+            
+    }
+        .checked{
+            color: gold;
+        }
+    .column:hover{
+        box-shadow: 15px 15px 10px lightskyblue;
+    }
+    #banner1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190625/ourmid/pngtree-beauty-and-beauty-women-s-atmosphere-high-end-cosmetics-banner-image_262275.jpg");
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        background-position: center;
+    }
+    #bb1{
+        padding-left:10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: 1px;
+        border-radius: 2px;
+        margin-top: 20px;
+        background: transparent;
+    }
+    #bb1:hover{
+        background: chocolate;
+    }
+    #nl{
+        margin-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: steelblue;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 150px;
+        font-size: medium;
+    }
+    #nl input{
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #nlb{
+       padding: 15px;
+    }
+    #nl span{
+        color: yellow;
+    }
+    footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    }
+
+    footer .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-decoration: none;
+    }
+    .col a{
+        text-decoration: none;
+    }
+    #f1{
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div id="one">
+            <img src="https://d2n9ha3hrkss16.cloudfront.net/uploads/stage/stage_image/57174/optimized_large_thumb_stage.jpg" alt="" height="55px" width="250px">
+        </div>
+        <div id="two">
+        <a style="text-decoration: none;" href="#home">Home</a>
+        </div>
+        <div id="three">
+            <a style="text-decoration: none;" href="#products">products</a>
+        </div>
+        <div id="four">
+            <a style="text-decoration: none;" href="#services">Services</a>
+        </div>
+        <div id="five">
+            <a href="#"><i class="fa fa-shopping-cart" style="font-size: 36px;"></i></a>
+        </div>
+    </div>
+    <hr>
+    <section id="s1">
+        <h3>Trade-in-offer</h3>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons &amp; up to 70% off</p>
+        <button>SHOP NOW</button>
+    </section>
+    <hr>
+    <div id="f">
+        <h1>Featured Products</h1>
+    </div>
+    <div class="container">
+        <div class="column">
+            <img src="https://cdn.shopify.com/s/files/1/0609/4412/2105/files/Menu-Image-160x160.png?v=7016458513104598085" alt="" width="200px" height="200px">
+            <div class="content">
+                <h4>Lotus splash</h4>
+                <h6>face-wash</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.1200</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://static-bebeautiful-in.unileverservices.com/monsoon-care-for-oily-skin-lakme-face-wash-430x550.jpg" alt="" width="200px" height="200px">
+            <div class="content">
+                <h4>LAKME</h4>
+                <h5>face-wash</h5>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.160</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDle7fy5qLBk2-E5NUxVUY8o_x8u6PLYu1nZPr6HJBQg&usqp=CAU&ec=48600112" alt="" width="200px" height="200px">
+            <div class="content">
+                <h4>LOREAL</h4>
+                <h6>face-whitening</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.115</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkA6jC63dqCHHG1ZQ2uQdJPtuw9wP5GtNs0SBf5CG_pw&usqp=CAU&ec=48600112" alt="" width="200px" height="200px">
+            <div class="content">
+                <h4>HIMALAYA</h4>
+                <h6>kesar-facewash</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.140</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4xqZO8l-zy9E-NCjNO4rhQsfdz_4ylUDWbIYISzkZcg&usqp=CAU&ec=48600112" alt="" width="200px" height="200px">
+            <div class="content">
+             <h4>KSTIMES</h4>
+             <h6>acne-removal</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.330</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://media.ulta.com/i/ulta/2577744?w=600&$ProductCardNeutralBGLight$&fmt=auto" alt="" width="200px" height="200px">
+            <div class="content">
+             <h4>VIRTUE</h4>
+             <h6>hair-smoothing</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <h3>Rs.1953</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITc5wI1ReZ12wX-UuRnarxMvFoLI5MnaMS9w9bGXUsw&usqp=CAU&ec=48600112" alt="" width="200px" height="200px">
+            <div class="content">
+             <h4>APOLLO</h4>
+             <h6>face scrub</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.100</h3>
+            </div>
+        </div>
+        <div class="column">
+            <img src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61g9cZ9HRtL._SL1500_.jpg" alt="" width="200px" height="200px">
+            <div class="content">
+             <h4>HIMALAYA</h4>
+             <h6>aloevera-facewash</h6>
+                <div id="star">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <h3>Rs.240</h3>
+            </div>
+        </div>
+    </div>
+    <section id="banner1">
+        <h2>upto 50% off on all cosmetics</h2>
+        <button id="bb1">more info</button>
+    </section>
+    <div id="nl">
+        <h4>Sign Up For Newsletters</h4>
+        <p class="nlp">Get E-mail updates about our latest shop and <span>special offers.</span> </p>
+        <input type="text" placeholder="Your email address">
+        <button id="nlb">Sign Up</button>
+    </div>
+    <section id="f1">
+    <footer class="section-p1">
+        <div class="col">
+          <h4>Contact</h4>
+          <p><strong> Address: </strong>3-11,yerpedu 517619,chittor</p>
+          <p><strong> Phone: </strong>+91-9573093224,9640448356</p>
+          <p><strong> Hours: </strong> 10:00-18:00,Mon-Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About us</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="#">Sign In</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Whislist</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class=" col install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p><img src="https://1.bp.blogspot.com/-EeJ5TSTq0mQ/X1uFzmuVvhI/AAAAAAAAAgU/wFO3ru7lGDQY5GJbguJYqomPPaxUKSUFwCPcBGAYYCw/s1400/1a49226d155846acb790eeb919f63c8e.jpg" style="
+          height: 24px;
+          margin-left: 74px;
+          ">
+          <div class="row">
+            <img src="https://th.bing.com/th/id/OIP.F4D7bwx4cyixVX0WOnbyAAHaJl?w=140&h=181&c=7&r=0&o=5&dpr=1.3&pid=1.7" weight="1cm" height="1cm" alt="">
+          </div>
+          <p>Secured Payment Gateways</p>
+        </div>
+        <div class="copyright">
+          <p>@ 2023, Tech2 etc- HTML CSS Ecommerse Template</p>
+        </div>
+       </footer>
+    </section>
+</body>
+</html>
